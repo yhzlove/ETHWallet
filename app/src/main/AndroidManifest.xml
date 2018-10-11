@@ -30,6 +30,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity android:name=".ui.activity.QRCodeScannerActivity" />
         <activity android:name=".ui.activity.CreateWalletActivity" />
         <activity android:name=".ui.activity.AddNewPropertyActivity" />

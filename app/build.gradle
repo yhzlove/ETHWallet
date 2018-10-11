@@ -18,6 +18,7 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    buildToolsVersion '26.0.1'
 }
 
 dependencies {
@@ -52,24 +53,20 @@ dependencies {
     compile 'com.lcodecorex:tkrefreshlayout:1.0.7'
     compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.22'
     implementation project(':zxingsupport')
-
-//    compile 'com.google.guava:guava:24.1-jre'
+    //    compile 'com.google.guava:guava:24.1-jre'
     // or, for Android:
     compile 'com.google.guava:guava:24.1-android'
-
     // 以太坊开发库
-    compile('org.web3j:core:3.3.1-android')
+    compile 'org.web3j:core:3.3.1-android'
     // 圆形图片
     compile 'de.hdodenhof:circleimageview:2.1.0'
-
     // 圆点Indicator
     compile 'com.youth.banner:banner:1.4.10'
     // glide 图片加载库
-    implementation("com.github.bumptech.glide:glide:4.6.1") {
+    implementation('com.github.bumptech.glide:glide:4.6.1') {
         exclude group: "com.android.support"
     }
     annotationProcessor 'com.github.bumptech.glide:compiler:4.6.1'
-
     // greenDao
     compile 'org.greenrobot:greendao:3.2.2'
     // EventBus
@@ -78,8 +75,10 @@ dependencies {
     implementation 'com.google.android:flexbox:0.3.2'
     // ViewPagerIndicator
     compile 'com.shizhefei:ViewPagerIndicator:1.1.6'
+    //数据库加密
+    implementation 'net.zetetic:android-database-sqlcipher:3.5.7@aar'
     // bitcoinj
-    implementation'org.bitcoinj:bitcoinj-core:0.14.3'
+    implementation 'org.bitcoinj:bitcoinj-core:0.14.7'
 
     compile 'com.android.support:multidex:1.0.3'
 }
